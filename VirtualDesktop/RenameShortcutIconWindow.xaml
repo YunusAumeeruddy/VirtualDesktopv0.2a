@@ -1,0 +1,63 @@
+﻿<Window x:Class="VirtualDesktop.RenameShortcutIconWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDesktop"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        Closing="Window_Closing"
+        Background="#003566"
+        Title="Rename" Width="260" Height="130">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="254" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28" />
+            <RowDefinition Height="28" />
+            <RowDefinition Height="33" />
+        </Grid.RowDefinitions>
+
+        <TextBox
+            Name="txtName"
+            Grid.Row="0"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="248"
+            Height="25"
+            TextChanged="txtName_TextChanged" />
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Height="25"
+                    HorizontalAlignment="Center">
+            <CheckBox
+                Name="chkbxRenameFile"
+                VerticalAlignment="Center"
+                IsChecked="True" />
+            <Label Content="Also rename referenced file name" Foreground="White" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Height="30"
+                    HorizontalAlignment="Center">
+            <Button
+                Name="btnOk"
+                IsEnabled="False"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="70"
+                Height="30"
+                Content="Ok"
+                Click="btnOk_Click" />
+            <Button
+                Name="btnCancel"
+                Margin="25,0,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="70"
+                Height="30"
+                Content="Cancel"
+                Click="btnCancel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

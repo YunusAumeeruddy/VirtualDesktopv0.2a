@@ -1,0 +1,13 @@
+csv
+doc
+docx
+odp
+ods
+odt
+pdf
+ppt
+pptx
+rtf
+txt
+xls
+xlsx

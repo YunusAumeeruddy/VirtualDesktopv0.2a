@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="App">
+	  <xsd:complexType>
+      <xsd:sequence>
+        <!-- ScreenProfile -->
+        <xsd:element name="ScreenProfile" minOccurs="1" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:attribute name="Id" type="xsd:nonNegativeInteger" use="required" />
+            <xsd:attribute name="ScreenAreaWidth" type="xsd:nonNegativeInteger" use="required" />
+            <xsd:attribute name="ScreenAreaHeight" type="xsd:nonNegativeInteger" use="required" />
+          </xsd:complexType>
+        </xsd:element>
+        <!-- Modes -->
+        <xsd:element name="Modes" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <!-- Mode -->
+              <xsd:element name="Mode" minOccurs="2" maxOccurs="2">
+                <xsd:complexType>
+                  <xsd:attribute name="Name" type="xsd:string" use="required" />
+                  <xsd:attribute name="Enabled" type="xsd:boolean" use="required" />
+                  <xsd:attribute name="Value" type="xsd:string" use="optional" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Background" minOccurs="0" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:attribute name="ImagePath" type="xsd:string" use="optional" />
+          </xsd:complexType>
+        </xsd:element>
+        <!-- Category -->
+        <xsd:element name="Category" minOccurs="1" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <!-- RowSettings -->
+              <xsd:element name="RowSettings" minOccurs="1" maxOccurs="1">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <!-- Row -->
+                    <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:attribute name="ScreenProfileId" type="xsd:nonNegativeInteger" use="required" />
+                        <xsd:attribute name="Value" type="xsd:positiveInteger" use="required" />
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <!-- Shortcut Icon -->
+              <xsd:element name="ShortcutIcon" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <!-- Position -->
+                    <xsd:element name="Position" minOccurs="1" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:attribute name="ScreenProfileId" type="xsd:integer" use="required" />
+                        <xsd:attribute name="GridLeftPos" type="xsd:integer" use="required" />
+                        <xsd:attribute name="GridTopPos" type="xsd:integer" use="required" />
+                        <xsd:attribute name="GridRightPos" type="xsd:integer" use="required" />
+                        <xsd:attribute name="GridBottomPos" type="xsd:integer" use="required" />
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="LabelText" type="xsd:string" use="required" />
+                  <xsd:attribute name="ShortcutPath" type="xsd:string" use="required" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Name" type="xsd:string" use="required" />
+            <xsd:attribute name="Image" type="xsd:string" use="optional" />
+            <xsd:attribute name="MainType" type="xsd:boolean" use="optional" />
+            <xsd:attribute name="MixedType" type="xsd:boolean" use="optional" />
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

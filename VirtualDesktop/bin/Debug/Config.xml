@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+PLEASE DO NOT MODIFY THIS XML FILE.
+Doing so may result in loss of save data used by the application.
+To use the application on another system, with the same save data as stored here,
+keep a copy of this XML file and move it in the same folder as the application(.exe) file
+-->
+<App>
+  <ScreenProfile Id="0" ScreenAreaWidth="1366" ScreenAreaHeight="728" />
+  <Modes>
+    <Mode Name="Auto-Categorised" Enabled="false" />
+    <Mode Name="Auto-Sort" Enabled="false" Value="Name" />
+  </Modes>
+  <Background ImagePath="" />
+  <Category Name="Applications" Image="pack://application:,,,/Resources/Images/applications.png" MainType="false" MixedType="false">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+    <ShortcutIcon LabelText="Age of Empires 2" ShortcutPath="C:\Users\Yunus\Desktop\Age of Empires 2.lnk">
+      <Position ScreenProfileId="0" GridLeftPos="2" GridTopPos="1" GridRightPos="9" GridBottomPos="5" />
+    </ShortcutIcon>
+    <ShortcutIcon LabelText="Fifa 11" ShortcutPath="C:\Users\Yunus\Desktop\Fifa 11.lnk">
+      <Position ScreenProfileId="0" GridLeftPos="0" GridTopPos="0" GridRightPos="11" GridBottomPos="6" />
+    </ShortcutIcon>
+    <ShortcutIcon LabelText="GameRanger" ShortcutPath="C:\Users\Yunus\Desktop\GameRanger.lnk">
+      <Position ScreenProfileId="0" GridLeftPos="0" GridTopPos="1" GridRightPos="11" GridBottomPos="5" />
+    </ShortcutIcon>
+  </Category>
+  <Category Name="Documents" Image="pack://application:,,,/Resources/Images/Documents.png" MainType="false" MixedType="false">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+  </Category>
+  <Category Name="Games" Image="pack://application:,,,/Resources/Images/games.png" MainType="false" MixedType="true">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+  </Category>
+  <Category Name="Images" Image="pack://application:,,,/Resources/Images/Images.png" MainType="false" MixedType="false">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+  </Category>
+  <Category Name="Miscellaneous" Image="pack://application:,,,/Resources/Images/miscellaneous.png" MainType="true" MixedType="true">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+  </Category>
+  <Category Name="Music" Image="pack://application:,,,/Resources/Images/Music.png" MainType="false" MixedType="false">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+  </Category>
+  <Category Name="Videos" Image="pack://application:,,,/Resources/Images/Videos.png" MainType="false" MixedType="false">
+    <RowSettings>
+      <Row ScreenProfileId="0" Value="7" />
+    </RowSettings>
+  </Category>
+</App>

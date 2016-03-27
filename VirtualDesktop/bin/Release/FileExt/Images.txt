@@ -1,0 +1,5 @@
+bmp
+gif
+jpeg
+jpg
+png

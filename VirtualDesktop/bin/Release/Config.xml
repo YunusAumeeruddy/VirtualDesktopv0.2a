@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+PLEASE DO NOT MODIFY THIS XML FILE.
+Doing so may result in loss of save data used by the application.
+To use the application on another system, with the same save data as stored here,
+keep a copy of this XML file and move it in the same folder as the application(.exe) file
+-->
+<App>
+  <ScreenProfile Id="0" ScreenAreaWidth="1366" ScreenAreaHeight="728" />
+  <Modes>
+    <Mode Name="Auto-Categorised" Enabled="true" />
+    <Mode Name="Auto-Sort" Enabled="true" Value="Name" />
+  </Modes>
+  <Background ImagePath="" />
+  <Category Name="Applications" Image="pack://application:,,,/Resources/Images/applications.png" MainType="false" MixedType="false">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+  <Category Name="Games" Image="pack://application:,,,/Resources/Images/games.png" MainType="false" MixedType="true">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+  <Category Name="Documents" Image="pack://application:,,,/Resources/Images/Documents.png" MainType="false" MixedType="false">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+  <Category Name="Images" Image="pack://application:,,,/Resources/Images/Images.png" MainType="false" MixedType="false">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+  <Category Name="Videos" Image="pack://application:,,,/Resources/Images/Videos.png" MainType="false" MixedType="false">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+  <Category Name="Music" Image="pack://application:,,,/Resources/Images/Music.png" MainType="false" MixedType="false">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+  <Category Name="Miscellaneous" Image="pack://application:,,,/Resources/Images/miscellaneous.png" MainType="true" MixedType="true">
+    <Row ScreenProfileId="0" Value="1" />
+  </Category>
+</App>
