@@ -1,0 +1,9 @@
+- Windows application that has the look and feel resembling the Windows 7 Desktop, with the following differences:
+  - Multiple desktop views
+  - Scrollable view height (If there are more than enough shortcut icons for a particular desktop view)
+  - Auto-save settings and positions of shortcut icons
+- Built using C# with WPF
+- Next version v0.3a features:
+  - New keyboard shortcuts
+  - Undo & redo features
+  - Error-handling refinements.
