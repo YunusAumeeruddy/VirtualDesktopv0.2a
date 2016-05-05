@@ -3,7 +3,7 @@
   - Scrollable view height (If there are more than enough shortcut icons for a particular desktop view)
   - Auto-save settings and positions of shortcut icons
 - Built using C# with WPF
-- Next version v0.3a features:
+- Next version v0.3a will feature:
   - New keyboard shortcuts
   - Undo & redo features
   - Error-handling refinements.
